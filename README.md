@@ -11,6 +11,8 @@ simple class that can get only the common things like `getText`, `getAttribute`,
 
 As protractor, all these common types return `Promise`
 
+`Component.prototype.root` - root element that find when you call constructor(`new` keyword). 
+
 ### `Collection`
 Collection like `ElementArrayFinder`, but you can use `for await ... of` syntax
 
@@ -46,3 +48,4 @@ Collection like `ElementArrayFinder`, but you can use `for await ... of` syntax
 - [] more comprehensive types
 - [] more common components(`Form`, `Selector`, `MultipleSelector`, `Checkbox`, `RadioButton`, `Input`(color picker, range, date, upload) , `Table`)
 - [] add module `protractor-components/common`
+- [] add API for angular(window.ng.probe function) and react(resq library) components
