@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suvroc/protractor-typescript-template.git"
+    "url": "git+https://github.com/vitalics/protractor-components.git"
   },
   "author": "vitalics",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/suvroc/protractor-typescript-template/issues"
+    "url": "https://github.com/vitalics/protractor-components/issues"
   },
-  "homepage": "https://github.com/suvroc/protractor-typescript-template#readme",
+  "homepage": "https://github.com/vitalics/protractor-components#readme",
   "keywords": [
     "protractor",
     "components"
