@@ -1,39 +1,45 @@
 {
-  "name": "protractor-typescript-template",
+  "name": "protractor-components",
   "version": "1.0.0",
-  "description": "Template project for Protractor end-to-end tests with TypeScript",
-  "main": "index.js",
+  "description": "Simple component builder for protractor",
+  "main": "build/index.js",
+  "files": [
+    "build/index.js",
+    "build/common/index.js"
+  ],
+  "typings": "typings/index.d.ts",
   "scripts": {
-    "test": "protractor ./protractor.conf.js"
+    "build": "tsc",
+    "example:install": "cd example && npm i",
+    "example:update": "cd example && npm run update",
+    "example:test": "cd example && npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suvroc/protractor-typescript-template.git"
   },
-  "author": "suvroc",
-  "license": "ISC",
+  "author": "vitalics",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/suvroc/protractor-typescript-template/issues"
   },
   "homepage": "https://github.com/suvroc/protractor-typescript-template#readme",
   "keywords": [
-    "protractor"
+    "protractor",
+    "components"
   ],
   "devDependencies": {
     "@types/jasmine": "^2.8.16",
-    "@types/lodash": "^4.14.135",
     "@types/node": "^12.0.10",
-    "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
-    "gulp-protractor": "^3.0.0",
-    "gulp-typescript": "^3.2.4",
     "jasmine": "^3.4.0",
     "protractor": "^5.4.2",
     "ts-node": "^8.3.0",
-    "typescript": "^3.5.2",
-    "yargs": "^6.3.0"
+    "typescript": "^3.5.2"
   },
   "dependencies": {
     "reflect-metadata": "^0.1.13"
+  },
+  "peerDependencies": {
+    "protractor": "^5.4.2"
   }
 }

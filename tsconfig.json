@@ -1,14 +1,15 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "target": "es6",
+        "target": "es2015",
         "module": "commonjs",
+        "outDir": "build",
         "baseUrl": "src",
+        "declarationDir": "typings",
         "moduleResolution": "node",
         "sourceMap": true,
-        "declaration": false,
-        "noImplicitAny": false,
-        "skipLibCheck": true,
+        "declaration": true,
+        "strict": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "lib": [
@@ -23,7 +24,11 @@
             "jasmine"
         ]
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "example"
     ]
 }

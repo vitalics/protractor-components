@@ -13,11 +13,10 @@ exports.config = {
   beforeLaunch: () => {
     require('ts-node').register();
   },
-  //baseUrl: 'http://localhost:3000',
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['src/e2e/**/*.ts'],
+  specs: ['e2e/**/*.e2e.ts'],
 
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {

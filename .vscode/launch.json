@@ -8,9 +8,9 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/node_modules/protractor/bin/protractor",
+            "program": "${workspaceFolder}/example/node_modules/protractor/bin/protractor",
             "args": [
-                "${workspaceFolder}/protractor.conf.js"
+                "${workspaceFolder}/example/protractor.conf.js"
             ]
         }
     ]

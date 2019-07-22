@@ -1,11 +1,14 @@
-import { PureComponent, Component } from "./component";
-import { ElementArrayFinder, ElementFinder, $ } from "protractor";
+import { Component } from "./component";
+import { ElementArrayFinder, ElementFinder } from "protractor";
 
-export class Collection<C extends PureComponent | Component> implements AsyncIterable<C>{
+export class Collection<C extends Component> implements AsyncIterable<C>{
+    protected readonly component: new (el: ElementFinder) => C;
     public constructor(
         public readonly root: ElementArrayFinder,
-        protected readonly component: (new (el: ElementFinder) => C)
-    ) { }
+        private readonly comp?: (new (el: ElementFinder) => C)
+    ) {
+        this.component = comp ? comp : Component as any;
+    }
     [Symbol.asyncIterator](): AsyncIterator<C> {
         let index = 0;
         const instance = this;
@@ -14,7 +17,7 @@ export class Collection<C extends PureComponent | Component> implements AsyncIte
                 const value = await instance.get(index);
                 const length = await instance.getLength();
                 if (index >= length) {
-                    return Promise.resolve<IteratorResult<C>>({ done: true, value: undefined })
+                    return Promise.resolve<IteratorResult<C>>({ done: true, value })
                 }
                 index++;
                 return Promise.resolve<IteratorResult<C>>({ done: false, value, })
@@ -35,12 +38,6 @@ export class Collection<C extends PureComponent | Component> implements AsyncIte
     public last(): C {
         return new this.component(this.root.last());
     }
-
-    public async map<U>(fn: (comp: C, index?: number) => U): Promise<U[]> {
-        const els = await this.root.map((el, index) => fn(new this.component(el), index)) as U[];
-        return els;
-    }
-
     public toArrayFinder() {
         return this.root;
     }

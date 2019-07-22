@@ -1,0 +1,1 @@
+{"version":3,"file":"link.js","sourceRoot":"","sources":["../../src/common/link.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,4CAAyC;AAEzC,MAAa,IAAK,SAAQ,qBAAS;IACzB,OAAO;;YACT,OAAO,IAAI,CAAC,IAAI,CAAC,YAAY,CAAC,MAAM,CAAC,CAAC;QAC1C,CAAC;KAAA;IACK,OAAO;;YACT,OAAO,IAAI,CAAC,IAAI,CAAC,OAAO,EAAE,CAAC;QAC/B,CAAC;KAAA;CACJ;AAPD,oBAOC"}

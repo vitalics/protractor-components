@@ -1,0 +1,23 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "scripts": {
+    "update": "npx webdriver-manager update",
+    "test": "protractor ./protractor.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.14",
+    "@types/node": "^12.6.8",
+    "jasmine": "^3.4.0",
+    "protractor": "^5.4.2",
+    "protractor-components": "file:..",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
+}
