@@ -1,9 +1,11 @@
 
-import { browser, $$ } from 'protractor';
+import { browser, $$, $ } from 'protractor';
 import { Collection, Component } from 'protractor-components';
+import { Image } from 'protractor-components/common';
 
 import { Reason } from './reason.component';
 import { ReasonCollection } from './reason.collection';
+
 
 describe('tests', function () {
   beforeAll(async () => {
@@ -50,4 +52,16 @@ describe('tests', function () {
       expect(body).toBe(EXPECTED_BODY);
     })
   });
+
+  describe('common components', () => {
+    it('Image', async () => {
+      const image = new Image($('a img'));
+
+      const alt = await image.alt;
+      const src = await image.src;
+
+      expect(alt).toBe('AngularJS');
+      expect(src).toBe('https://angularjs.org/img/angularjs-for-header-only.svg');
+    })
+  })
 });

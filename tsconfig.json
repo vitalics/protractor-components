@@ -25,10 +25,13 @@
         ]
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "common/**/*",
+        "index.ts"
     ],
     "exclude": [
         "node_modules",
-        "example"
+        "example",
+        "build"
     ]
 }

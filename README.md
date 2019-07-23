@@ -19,28 +19,50 @@ Collection like `ElementArrayFinder`, but you can use `for await ... of` syntax
 ## Example
 
 ``` ts
-    // component1.ts
-    import { Component } from 'protractor-components';
-    export class MyComponent extends Component {
-        async getHeader(){
-            return this.root.$('header').getText();
-        }
+// reason.component.ts
+import { Component } from 'protractor-components';
+import { $ } from 'protractor';
+
+export class Reason extends Component {
+    constructor() {
+        super($('.row.first .span4'));
+    }
+    getHeader() {
+        return this.$('.text-display-1').getText();
     }
 
-    // e2e.ts
-    import { $ } from 'protractor';
-    import { MyComponent } from './component1';
+    getBody() {
+        return this.$('.text-body').getText();
+    }
+}
 
-    describe('...', () =>{
-        it('...', async ()=>{
-            const myComponent = new MyComponent($('.container'));
 
-            const header = await myComponent.getHeader();
+// e2e.ts
+import { $ } from 'protractor';
+import { Reason } from './reason.component';
 
-            expect(typeof header).toBe('string');
-        })
+describe('...', () =>{
+    it('...', async ()=>{
+        const reason = new Reason();
+        const header = awaitreason.getHeader();
+        expect(typeof header).toBe('string';
     })
+})
 ```
+`collection` example
+``` ts
+import { $$ } from 'protractor';
+import { Collection } from 'protractor-components';
+
+import { Reason } from './reason.component';
+
+export class ReasonCollection extends Collection<Reason>{
+    constructor(){
+        super($$('.row.first .span4'), Reason);
+    }
+}
+```
+
 
 ## TODO
 
