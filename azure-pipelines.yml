@@ -26,5 +26,6 @@ steps:
   displayName: 'npm install example folder and updating selenium binaries'
   
 - script: |
-    npm run example:test
+    cd example
+    npm test
   displayName: 'npm run example e2e tests'
