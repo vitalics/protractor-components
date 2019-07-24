@@ -1,7 +1,7 @@
 import { Component } from "./component";
 import { ElementArrayFinder, ElementFinder } from "protractor";
 
-export class Collection<C extends Component> implements AsyncIterable<C>{
+export class Collection<C extends Component = Component> implements AsyncIterable<C>{
     protected readonly component: new (el: ElementFinder) => C;
     public constructor(
         public readonly root: ElementArrayFinder,

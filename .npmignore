@@ -1,5 +1,6 @@
 example
 .vscode
 
-# include the .d.ts files
+# include the .ts files
 !*.d.ts
+!*.ts
