@@ -1,5 +1,5 @@
 import { Component } from "../src/component";
-import { ImageLike } from "./typings/image";
+import { ImageLike } from "./api/image";
 
 export class Image extends Component implements ImageLike {
     get src(): Promise<string> {

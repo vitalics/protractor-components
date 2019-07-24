@@ -5,8 +5,6 @@
   "main": "./index.js",
   "files": [
     "index.js",
-    "src",
-    "common",
     "src/**/*.d.ts",
     "common/**/*.d.ts",
     "index.ts",

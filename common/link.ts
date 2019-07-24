@@ -1,5 +1,5 @@
 import { Component } from "../src/component";
-import { LinkLike } from "./typings/link";
+import { LinkLike } from "./api/link";
 
 export class Link extends Component implements LinkLike {
     async getHref() {

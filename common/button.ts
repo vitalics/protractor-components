@@ -1,7 +1,7 @@
 import { ExpectedConditions as EC, browser } from 'protractor';
 
 import { Component } from "../src/component";
-import { ButtonLike } from "./typings/button";
+import { ButtonLike } from "./api/button";
 
 export class Button extends Component implements ButtonLike {
     async click(timeout?: number) {
