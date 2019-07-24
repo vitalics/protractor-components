@@ -8,9 +8,9 @@
     "src",
     "common",
     "src/**/*.d.ts",
-    "common/**/.d.ts*"
+    "common/**/*.d.ts"
   ],
-  "typings": "typings/index.d.ts",
+  "typings": "index.d.ts",
   "scripts": {
     "build": "tsc",
     "example:install": "cd example && npm i",
