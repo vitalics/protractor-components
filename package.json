@@ -5,7 +5,9 @@
   "main": "build/index.js",
   "files": [
     "build/index.js",
-    "build/common"
+    "build/src",
+    "build/common",
+    "typings/**.d.ts"
   ],
   "typings": "typings/index.d.ts",
   "scripts": {
