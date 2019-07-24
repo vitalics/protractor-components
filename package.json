@@ -7,7 +7,7 @@
     "build/index.js",
     "build/src",
     "build/common",
-    "typings/**.d.ts"
+    "typings/**/*.d.ts"
   ],
   "typings": "typings/index.d.ts",
   "scripts": {
