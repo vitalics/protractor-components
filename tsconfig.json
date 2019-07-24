@@ -3,11 +3,9 @@
     "compilerOptions": {
         "target": "es2015",
         "module": "commonjs",
-        "outDir": "build",
         "baseUrl": "src",
-        "declarationDir": "typings",
         "moduleResolution": "node",
-        "sourceMap": true,
+        "inlineSourceMap": true,
         "declaration": true,
         "strict": true,
         "experimentalDecorators": true,

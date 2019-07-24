@@ -38,4 +38,7 @@ jspm_packages
 .tmp/
 package-lock.json
 
-build/
+*.d.ts
+index.js
+src/**/*.js
+common/**/*.js
