@@ -22,13 +22,13 @@ describe('tests', function () {
         expect(typeof text).toBe('string');
       }
 
-      expect(await reasons.getLength()).toBe(3);
+      expect(await reasons.length).toBe(3);
     });
 
     it('custom collection', async () => {
       const collection = new ReasonCollection();
 
-      const length = await collection.getLength();
+      const length = await collection.length;
 
       expect(length).toBe(3);
 
@@ -36,6 +36,13 @@ describe('tests', function () {
         expect(reason.getBody).toBeDefined();
         expect(reason.getHeader).toBeDefined();
       }
+    })
+    it(' length should return a promise function', async () => {
+      const collection = new ReasonCollection();
+
+      const length = await collection.length;
+
+      expect(length).toEqual(3);
     })
   });
 

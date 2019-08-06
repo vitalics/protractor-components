@@ -15,11 +15,11 @@
             "es2015",
             "es2016",
             "es2017",
-            "esnext.asynciterable"
+            "es2018",
+            "esnext"
         ],
         "types": [
-            "node",
-            "jasmine"
+            "node"
         ]
     },
     "include": [

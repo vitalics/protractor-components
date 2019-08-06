@@ -66,8 +66,8 @@ export class ReasonCollection extends Collection<Reason>{
 
 ## TODO
 
-- [] JSDoc from protractor for `Component` and `Collection`
-- [] more comprehensive types
-- [] more common components(`Form`, `Selector`, `MultipleSelector`, `Checkbox`, `RadioButton`, `Input`(color picker, range, date, upload) , `Table`)
-- [] add module `protractor-components/common`
+- [x] JSDoc from protractor for `Component` and `Collection`
+- [x] more comprehensive types
+- [x] more common components(`Form`, `Selector`, `MultipleSelector`, `Checkbox`, `RadioButton`, `Input`(color picker, range, date, upload) , `Table`)
+- [x] add module `protractor-components/common`
 - [] add API for angular(window.ng.probe function) and react(resq library) components
