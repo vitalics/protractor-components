@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.2.0"
   },
   "peerDependencies": {
     "protractor": "^5.4.2"
