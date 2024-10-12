@@ -32,9 +32,9 @@
     "components"
   ],
   "devDependencies": {
-    "@types/jasmine": "3.3.16",
+    "@types/jasmine": "5.1.4",
     "@types/node": "12.6.8",
-    "jasmine": "3.4.0",
+    "jasmine": "5.4.0",
     "protractor": "5.4.2",
     "ts-node": "8.3.0",
     "typescript": "3.5.3"
